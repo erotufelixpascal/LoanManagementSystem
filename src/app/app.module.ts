@@ -2,13 +2,19 @@ import { HTTP_INTERCEPTORS } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
-
+import { LoanApplicationComponent } from "./Client/loan-application/loan-application.component";
+import { ClientRecordComponent } from "./LoanOfficer/client-record/client-record.component";
 
 @NgModule({
-    declarations: [],
+    declarations: [
+        LoanApplicationComponent
+    ],
 
     imports : [
-        AppRoutingModule
+        AppRoutingModule,
+        LoanApplicationComponent,
+        ClientRecordComponent
+
     ] ,
 
 providers: [
