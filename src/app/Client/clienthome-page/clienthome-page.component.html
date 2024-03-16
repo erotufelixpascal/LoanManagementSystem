@@ -1,1 +1,158 @@
-<p>clienthome-page works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Administration Panel</title>
+    
+</head>
+<body>
+    <aside class="sidebar">
+        <!-- Sidebar content -->
+        <div class="logotxt">
+            <h1>Landmark</h1>
+        </div>
+        <div class="sidebarTitleAdmin">
+            Client
+        </div>
+        <nav class="sidebar-nav">
+            <!-- Navigation items -->
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="goToChildRoute('/client/home-page')">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" (click)="goToChildRoute('/client/loan-application')">Apply for Loan</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" (click)="goToChildRoute('/client/loan-application')">View your Loans</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" (click)="goToChildRoute('/client/loan-application')">Make Savings Deposit</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" (click)="goToChildRoute('/client/loan-application')">Apply for a Coupon</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" (click)="goToChildRoute('/client/loan-application')">Log Out</a>
+                </li>
+                <!-- Add more nav items as needed -->
+            </ul>
+        </nav>
+    </aside>
+    <header class="top-bar">
+        <!-- Top bar content -->
+        <span class="page-title">Loan Helper</span>
+        <div class="profile">
+            <img src="path-to-profile-pic.jpg" alt="Sam Admin">
+            <span>Sam Admin</span>
+        </div>
+    </header>
+    <section class="main-content">
+        <!-- Main content area -->
+        <div class="survey-section">
+            <!-- Survey details and questions will go here -->
+            <!-- This is a placeholder for a single survey item -->
+            <div class="survey-item">
+                <h4>Welcome to Your App</h4>
+                    <p>This is a simple example of an Angular app with a navbar and a main section. You can customize it to fit your needs.</p>
+                    
+                <!-- More form fields -->
+            </div>
+            <!-- <section class="container mt-4"> -->
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="container">
+                        <div class="row">
+                          <!-- Column 1 -->
+                          <div class="col-md-4">
+                            <div class="card mb-4">
+                              <div class="card-body">
+                                <h5 class="card-title">Promotion</h5>
+                                <p class="card-text">Content for column 1 goes here.</p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <!-- Column 2 -->
+                          <div class="col-md-4">
+                            <div class="card mb-4">
+                              <div class="card-body">
+                                <h5 class="card-title">Possible Clients</h5>
+                                <p class="card-text">Content for column 2 goes here.</p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <div class="card mb-4">
+                              <div class="card-body">
+                                <h5 class="card-title">In Arrears</h5>
+                                <p class="card-text">Content for column 3 goes here.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>  
+                      <div class="container">
+                        <div class="row">
+                          <!-- Column 1 -->
+                          <div class="col-md-4">
+                            <div class="card mb-4">
+                              <div class="card-body">
+                                <h5 class="card-title">Column 1</h5>
+                                <p class="card-text">Content for column 1 goes here.</p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <!-- Column 2 -->
+                          <div class="col-md-4">
+                            <div class="card mb-4">
+                              <div class="card-body">
+                                <h5 class="card-title">Column 2</h5>
+                                <p class="card-text">Content for column 2 goes here.</p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                          <!-- Column 3 -->
+                          <div class="col-md-4">
+                            <div class="card mb-4">
+                              <div class="card-body">
+                                <h5 class="card-title">Column 3</h5>
+                                <p class="card-text">Content for column 3 goes here.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                          
+                </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Sidebar</h5>
+                        <p class="card-text">You can add additional content or components here.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!-- Repeat for each survey item -->
+        </div>
+    </section>
+    <footer class="footer">
+        <!-- Footer content -->
+        <div class="col-md-12 text-center">
+            &copy; 2024 LoanManagementApp. All Rights Reserved.
+          </div>
+          <div class="social-icons">
+            <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram-square"></i></a>
+            <!-- Add more social media icons and links as needed -->
+          </div>
+    </footer>
+</body>
+</html>

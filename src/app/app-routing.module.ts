@@ -9,7 +9,7 @@ import { LoanApplicationComponent } from "./Client/loan-application/loan-applica
 
 
 export const routes: Routes = [ 
-    { path:"" , component: HomePageComponent},
+    //{ path:"" , component: HomePageComponent},
     { path:"loan-officer/home-page" , component: HomePageComponent},
     { path:"loan-officer/register-loan" , component: RegisterLoanComponent},
     { path:"loan-officer/view-loan" , component: ViewLoanComponent},

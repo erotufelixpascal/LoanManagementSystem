@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Layout */
+.sidebar {
+    width: 20%;
+    background-color: #888888; /* Replace with actual color code */
+    height: 100vh;
+    position: fixed;
+    border-left: 0.4rem solid #A50000;
+}
+.logotxt{
+    padding: 1rem;
+    text-align: center;
+}
+.sidebarTitleAdmin{
+    background-color: #A50000;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem;
+}
+
+.top-bar {
+    margin-left: 20%; /* Width of the sidebar */
+    height: 3.5rem;
+    background-color: #cccccc; /* Replace with actual color code */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-content {
+    margin-left: 20%; /* Width of the sidebar */
+    padding: 1rem;
+}
+
+/* Navigation Styles */
+.sidebar-nav {
+    padding: 2rem 0.75rem 3rem 0.75rem;
+}
+.sidebar-nav ul {
+    list-style-type: none;
+    margin-left: 0.5rem;
+}
+
+.sidebar-nav li a {
+    display: block;
+    padding: 0.75rem;
+    margin-left: 0.5rem;
+    color: #fff; /* Adjust color as needed */
+    text-decoration: none;
+    /* border-radius: 25px;
+    background-color: #1C1D22; */
+}
+.sidebar-nav li a:hover {
+    color: #000; /* Adjust color as needed */
+    border-radius: 25px;
+    background-color: #CCCCCC;
+}
+.sidebar-nav li a:active {
+    color: #ffffff; /* Adjust color as needed */
+    border-radius: 25px;
+    background-color: #333333;
+}
+
+
+/* Profile Styles */
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Form Styles */
+.survey-item {
+    background-color: #f0f0f0; /* Replace with actual color code */
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    border-radius: 18px;
+}
+
+.survey-item label {
+    margin-right: 0.75rem;
+}
+
+.survey-item input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+/* Footer Styles */
+.footer {
+    margin-left: 20%; /* Width of the sidebar */
+    height: 4rem;
+    padding: 1rem;
+    background-color: #eeeeee; /* Replace with actual color code */
+    text-align: center;
+    /* line-height: 30px; */
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+}
