@@ -43,19 +43,19 @@
             <section id="loan-application">
                 <h2>Apply for a Loan</h2>
                 <form [formGroup]="LoanGroup">
-                    <div class="form-group">
+                    <div >
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required formControlName="fullName">
                     </div>
-                    <div class="form-group">
+                    <div >
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required formControlName="email">
                     </div>
-                    <div class="form-group">
+                    <div >
                         <label for="amount">Loan Amount</label>
                         <input type="number" id="amount" name="amount" required formControlName="loanAmount">
                     </div>
-                    <div class="form-group">
+                    <div >
                         <label for="purpose">Loan Purpose</label>
                         <select id="purpose" name="purpose" required formControlName="loanPurpose">
                             <option value="">Select Purpose</option>
