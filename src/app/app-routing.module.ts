@@ -6,10 +6,12 @@ import { ViewLoanComponent } from "./LoanOfficer/view-loan/view-loan.component";
 import { ClientRecordComponent } from "./LoanOfficer/client-record/client-record.component";
 import { ClienthomePageComponent } from "./Client/clienthome-page/clienthome-page.component";
 import { LoanApplicationComponent } from "./Client/loan-application/loan-application.component";
+import { LoginComponent } from "./login/login.component";
 
 
 export const routes: Routes = [ 
     //{ path:"" , component: HomePageComponent},
+    { path:"login" , component:LoginComponent},
     { path:"loan-officer/home-page" , component: HomePageComponent},
     { path:"loan-officer/register-loan" , component: RegisterLoanComponent},
     { path:"loan-officer/view-loan" , component: ViewLoanComponent},
