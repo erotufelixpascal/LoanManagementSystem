@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators,FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,13 +8,26 @@ import { Router } from '@angular/router';
   styleUrl: './loan-application.component.scss'
 })
 export class LoanApplicationComponent implements OnInit{
+  LoanGroup: FormGroup;
 
   constructor(
-    private router: Router
-  ){}
+    private router: Router,
+    private fb: FormBuilder
+  ){
+    this.LoanGroup = this.fb.group({
+      fullName: [null, [Validators.required]],
+      email: [null, [Validators.required]],
+      loanAmount: [null, [Validators.required]],
+      loanPurpose :[null, [Validators.required]]
+
+    })
+  }
 
   ngOnInit(): void {
     
+  }
+  loanApplication(){
+    console.log();
   }
 
   goToChildRoute(route :string ){      

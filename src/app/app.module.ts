@@ -8,6 +8,9 @@ import { ClienthomePageComponent } from "./Client/clienthome-page/clienthome-pag
 import { RegisterLoanComponent } from "./LoanOfficer/register-loan/register-loan.component";
 import { ViewLoanComponent } from "./LoanOfficer/view-loan/view-loan.component";
 import { HomePageComponent } from "./LoanOfficer/home-page/home-page.component";
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from "./login/login.component";
 @NgModule({
     declarations: [
         LoanApplicationComponent,
@@ -15,12 +18,17 @@ import { HomePageComponent } from "./LoanOfficer/home-page/home-page.component";
         ClienthomePageComponent,
         RegisterLoanComponent,
         ViewLoanComponent,
-        HomePageComponent
+        HomePageComponent,
+        AppComponent,
+        LoginComponent
     ],
 
     imports : [
-        AppRoutingModule
-        
+        AppRoutingModule,
+        NgModule,
+        BrowserModule,
+        ReactiveFormsModule,
+        FormsModule        
 
     ] ,
 
