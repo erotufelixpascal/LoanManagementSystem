@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class LoanApplicationComponent implements OnInit{
   LoanGroup: FormGroup;
+  email : string="";
 
   constructor(
     private router: Router,
@@ -27,7 +28,7 @@ export class LoanApplicationComponent implements OnInit{
   ngOnInit(): void {
     
   }
-  loanApplication(){
+  loanApplication(email : string){
     console.log();
   }
 

@@ -42,30 +42,31 @@
         <div class="survey-section">
             <section id="loan-application">
                 <h2>Apply for a Loan</h2>
-                <form [formGroup]="LoanGroup">
-                    <div >
-                        <label for="name">Full Name</label>
+                <!-- <form [formGroup]="LoanGroup"> -->
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label><br>
                         <input type="text" id="name" name="name" required formControlName="fullName">
                     </div>
-                    <div >
-                        <label for="email">Email</label>
+                    <div class="form-group">
+                        <label for="email">Email</label><br>
                         <input type="email" id="email" name="email" required formControlName="email">
                     </div>
-                    <div >
-                        <label for="amount">Loan Amount</label>
+                    <div class="form-group">
+                        <label for="amount">Loan Amount</label><br>
                         <input type="number" id="amount" name="amount" required formControlName="loanAmount">
                     </div>
-                    <div >
-                        <label for="purpose">Loan Purpose</label>
+                    <div class="form-group">
+                        <label for="purpose">Loan Purpose</label><br>
                         <select id="purpose" name="purpose" required formControlName="loanPurpose">
                             <option value="">Select Purpose</option>
                             <option value="Home Improvement">Home Improvement</option>
                             <option value="Education">Education</option>
                             <option value="Debt Consolidation">Debt Consolidation</option>
                             <!-- Add more options as needed -->
-                        </select>
+                        </select><br>
                     </div>
-                    <button type="submit" (click)="loanApplication()">Submit Application</button>
+                    <button type="submit" color="accent" (click)="loanApplication(email)">Submit Application</button>
                 </form>
             </section>
         </div>
