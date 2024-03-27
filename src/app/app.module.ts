@@ -11,6 +11,7 @@ import { HomePageComponent } from "./LoanOfficer/home-page/home-page.component";
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from "./login/login.component";
+import { AgGridModule } from "ag-grid-angular";
 @NgModule({
     declarations: [
         LoanApplicationComponent,
@@ -28,7 +29,8 @@ import { LoginComponent } from "./login/login.component";
         NgModule,
         BrowserModule,
         ReactiveFormsModule,
-        FormsModule        
+        FormsModule,
+        AgGridModule        
 
     ] ,
 
