@@ -3,14 +3,13 @@ import { ColDef, GridReadyEvent, GridSizeChangedEvent, createGrid } from "ag-gri
 
 
 interface IRow {
-  participant_PID: string;
-  ParticipantFirstName: string;
-  ParticipantLastName: string;
-  ParticipantNamesLike: string;
-  course_partner_PID: string;
-  CoursePartnerFirstName: string;
-  CoursePartnerLastName: string;
-  CoursePartnerNamesLike: string;
+  FirstName: string;
+  LastName: string;
+  NamesLike: string;
+  loanId: string;
+  loanAmount: string;
+  loanStatus: string;
+
 }
 @Component({
   selector: 'app-view-loan',
@@ -26,6 +25,7 @@ export class ViewLoanComponent implements OnInit {
     resizable: true,
   };
   GetLoanList: IRow[] = [];
+  public rowSelection: "single" | "multiple" = "multiple"
 
   colDefs: ColDef[] = [
     { field: "FirstName", headerName: "First Name" },
@@ -47,9 +47,10 @@ export class ViewLoanComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  onGridSizeChange(params: GridSizeChangedEvent) {
-    const gridApi = params.api;
+  onGridSizeChange(event: GridSizeChangedEvent) {
+    const gridApi = event.api;
     gridApi.sizeColumnsToFit();
+   
   }
 
 }
