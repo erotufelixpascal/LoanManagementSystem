@@ -12,6 +12,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from "./login/login.component";
 import { AgGridModule } from "ag-grid-angular";
+import {MatTableModule} from '@angular/material/table';
+
 @NgModule({
     declarations: [
         LoanApplicationComponent,
@@ -30,7 +32,8 @@ import { AgGridModule } from "ag-grid-angular";
         BrowserModule,
         ReactiveFormsModule,
         FormsModule,
-        AgGridModule        
+        AgGridModule ,
+        MatTableModule      
 
     ] ,
 
