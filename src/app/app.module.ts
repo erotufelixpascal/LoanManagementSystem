@@ -12,7 +12,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from "./login/login.component";
 import { AgGridModule } from "ag-grid-angular";
-import {MatTableModule} from '@angular/material/table';
+import {MatSort, MatSortModule} from '@angular/material/sort';
+import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 
 @NgModule({
     declarations: [
@@ -33,7 +34,10 @@ import {MatTableModule} from '@angular/material/table';
         ReactiveFormsModule,
         FormsModule,
         AgGridModule ,
-        MatTableModule      
+        MatTableModule,
+        MatSortModule,
+        MatTableDataSource,
+        MatSort  
 
     ] ,
 
