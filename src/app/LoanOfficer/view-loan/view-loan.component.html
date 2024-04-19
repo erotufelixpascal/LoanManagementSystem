@@ -21,6 +21,7 @@
               <li><a class="nav-link" href="/loan-officer/home-page">Home</a></li>
               <li><a class="nav-link" href="/loan-officer/register-loan">Register Loans</a></li>
               <li><a class="nav-link" href="loan-officer/view-loan">View Loan</a></li>
+              <li><a class="nav-link" routerLink="/loan-officer/view-loan">View Loans</a></li>
               <li><a class="nav-link" href="loan-officer/client-record">Client Records</a></li>
                 <!-- Add more nav items as needed -->
             </ul>
@@ -46,7 +47,7 @@
 
             <div class="content">
               <h2>Class list of participants</h2>
-                <table mat-table[dataSource]="dataSource" matSort (matSortChange)="onSortChange($event)"
+                <table mat-table[dataSource]="dataSource" matSort (matSortChange)="onSortChange(sort)"
                     class="mat-elevation-z8">
 
                 <!-- Position Column -->
